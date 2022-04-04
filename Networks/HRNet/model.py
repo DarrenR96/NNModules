@@ -3,7 +3,7 @@
 import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow import keras
-from libraries.hrNetModule.hrNetComponents import hrBlock, hrFinalBlock
+from .components import hrBlock, hrFinalBlock
 
 class hrNet(keras.Model):
     def __init__(self, numLayersPerBlock=4, filters=[64,128,256,512], kernelSize=3, inputSize=192, outputSize=3):
